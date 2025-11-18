@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useAuth } from '../utils/auth'
+import api from '../api/axios'
 
 export default function DepositModal({ onClose }) {
   const { user, setUser } = useAuth()
@@ -15,8 +16,7 @@ export default function DepositModal({ onClose }) {
       return
     }
 
-    // Full timestamp including date and time
-    const timestampStr = new Date().toLocaleString() // e.g., "11/17/2025, 4:12:23 PM"
+    const timestampStr = new Date().toLocaleString()
 
     const newTransaction = {
       id: Date.now(),
@@ -33,17 +33,14 @@ export default function DepositModal({ onClose }) {
     }
 
     try {
-      const res = await fetch(`http://localhost:4000/users/${user.id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updatedUser)
-      })
-      if (!res.ok) throw new Error('Failed to update user on server')
+      await api.patch(`/users/${user.id}`, updatedUser)
 
       setUser(updatedUser)
       setSuccess('Deposit successful!')
       setAmount('')
       setError('')
+
+      onClose() //Automatically close after success
     } catch (err) {
       setError(`Failed to deposit: ${err.message}`)
       setSuccess('')

@@ -82,6 +82,9 @@ export default function SendModal({ onClose }) {
       setRecipientEmail('')
       setAmount('')
       setMessage('')
+
+      onClose() //Automatically close after success
+
     } catch (err) {
       console.error(err)
       setError('Failed to send money. Try again.')

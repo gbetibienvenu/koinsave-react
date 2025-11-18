@@ -5,8 +5,15 @@
       "email": "alice@example.com",
       "password": "password123",
       "name": "Alice",
-      "balance": 3127.75,
+      "balance": 5127.75,
       "transactions": [
+        {
+          "id": 1763443426092,
+          "type": "credit",
+          "amount": 2000,
+          "desc": "Received from BIENVENU GBETI - For flex flex",
+          "date": "11/18/2025, 6:23:46 AM"
+        },
         {
           "id": 1763415352667,
           "type": "credit",
@@ -56,8 +63,36 @@
       "name": "BIENVENU GBETI",
       "email": "olawalesossapeter@gmail.com",
       "password": "Bienvenu6676@",
-      "balance": 130832,
+      "balance": 143432,
       "transactions": [
+        {
+          "id": 1763444012397,
+          "type": "credit",
+          "amount": 6000,
+          "desc": "Received from Christian Hounkponou - your tfar",
+          "date": "11/18/2025, 6:33:32 AM"
+        },
+        {
+          "id": 1763443561246,
+          "type": "credit",
+          "amount": 5600,
+          "desc": "Received from Christian Hounkponou - your tfare",
+          "date": "11/18/2025, 6:26:01 AM"
+        },
+        {
+          "id": 1763443426091,
+          "type": "debit",
+          "amount": 2000,
+          "desc": "Transfer to Alice - For flex flex",
+          "date": "11/18/2025, 6:23:46 AM"
+        },
+        {
+          "id": 1763443391414,
+          "type": "credit",
+          "amount": 3000,
+          "desc": "Deposit",
+          "date": "11/18/2025, 6:23:11 AM"
+        },
         {
           "id": 1763417347195,
           "type": "credit",
@@ -164,8 +199,36 @@
       "name": "Christian Hounkponou",
       "email": "christianounkponou4@gmail.com",
       "password": "Olawale6676@",
-      "balance": 3168,
+      "balance": 48567,
       "transactions": [
+        {
+          "id": 1763444012396,
+          "type": "debit",
+          "amount": 6000,
+          "desc": "Transfer to BIENVENU GBETI - your tfar",
+          "date": "11/18/2025, 6:33:32 AM"
+        },
+        {
+          "id": 1763443950902,
+          "type": "credit",
+          "amount": 6999,
+          "desc": "Deposit",
+          "date": "11/18/2025, 6:32:30 AM"
+        },
+        {
+          "id": 1763443561245,
+          "type": "debit",
+          "amount": 5600,
+          "desc": "Transfer to BIENVENU GBETI - your tfare",
+          "date": "11/18/2025, 6:26:01 AM"
+        },
+        {
+          "id": 1763443524666,
+          "type": "credit",
+          "amount": 50000,
+          "desc": "Deposit",
+          "date": "11/18/2025, 6:25:24 AM"
+        },
         {
           "id": 1763417140182,
           "type": "debit",

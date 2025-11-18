@@ -1,11 +1,26 @@
-import axios from 'axios'
+import axios from "axios";
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000'
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000/api'
+// const API_BASE = "http://localhost:4000/api"; 
+// const API_BASE = import.meta.env.VITE_API_BASE;
+
+// Local backend URL
 
 const instance = axios.create({
   baseURL: API_BASE,
-  headers: { 'Content-Type': 'application/json' },
-  timeout: 10000
-})
+  headers: { "Content-Type": "application/json" },
+});
 
-export default instance
+export default instance;
+
+// import axios from 'axios'
+
+// const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000/api'
+
+// const instance = axios.create({
+//   baseURL: API_BASE,
+//   headers: { 'Content-Type': 'application/json' },
+//   timeout: 10000
+// })
+
+// export default instance
